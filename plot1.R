@@ -22,8 +22,7 @@ subFileContent$Date = as.Date(strptime(subFileContent$Date, "%d/%m/%Y"))
 #graph1
 library(graphics)
 png(filename = "plot1.png", width = 480, height = 480,
-    units = "px", pointsize = 12, bg = "white", res = NA,
-    restoreConsole = TRUE)
+    units = "px", pointsize = 12, bg = "white", res = NA)
 hist(as.numeric(subFileContent$Global_active_power), main = "Global Active Power", 
      xlab = "Global Active Power (in kilowatt)", pch = 21, col="red")
 dev.off()
