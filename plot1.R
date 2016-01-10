@@ -27,9 +27,3 @@ png(filename = "plot1.png", width = 480, height = 480,
 hist(as.numeric(subFileContent$Global_active_power), main = "Global Active Power", 
      xlab = "Global Active Power (in kilowatt)", pch = 21, col="red")
 dev.off()
-
-
-
-val<-fileContent[["VAL"]]
-val_without_na<-val[!is.na(val)]
-val_over_1mil<-val_without_na[val_without_na==24]
