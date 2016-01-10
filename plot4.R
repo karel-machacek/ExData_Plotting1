@@ -22,7 +22,7 @@ library(graphics)
 png(filename = "plot4.png", width = 480, height = 480,
     units = "px", pointsize = 12, bg = "white", res = NA, restoreConsole = TRUE)
 
-par(mfrow=c(2,2),mar=c(2,2,2,2))
+par(mfrow=c(2,2),mar=c(4,4,0,0))
 
 plot(subFileContent$Date, as.numeric(subFileContent$Global_active_power), type="l", 
      ylab = "Global Active Power", xlab = "", col="black")
